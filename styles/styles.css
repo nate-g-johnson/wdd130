@@ -1,3 +1,7 @@
+:root {
+    --border: 1px solid #000;
+    --background-color: #fff
+}
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -28,7 +32,7 @@ aside {
     margin: 1rem;
     border: 1px solid rgba(0, 0, 0, 2);
     padding: 1rem;
-    background-color: #fff;
+    background-color: var(--background-color);
     color: #1f1e1e;
     text-align: center;
 }
@@ -38,6 +42,6 @@ aside img {
 }
 footer {
     margin-top: 15px;
-    border-top: 1px solid #000;
+    border-top: var(--border);
     text-align: center;
 }
