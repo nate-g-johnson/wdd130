@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #BEDCFE; 
+    --secondary-color: #1B7D59; 
+    --accent-color: #DBB68F; 
+    --text-color: #333; 
+    --background-color: #586994; 
+    --header-font: 'Afacad Flux', sans-serif; 
+    --body-font: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--background-color);
+    color: var(--text-color);
+    max-width: 1200px; /* Limit the width of the page */
+    margin: 0 auto; 
+    padding: 20px; 
+} 
+header img {
+    width: 200px;
+    height: 200px;
+    
+}
+h1, h2 {
+    font-family: var(--header-font);
+    color: var(--primary-color);
+}
+p {
+    color: var(--text-color);
+    line-height: 1.5; /* Improve readability */
+}
+
+.hero {
+    position: relative; 
+    overflow: hidden;
+}
+
+.hero-image {
+    display: block; 
+    width: 100%; 
+    height: auto; 
+}
+
+h1 {
+    position: absolute; 
+    top: 20px; 
+    left: 35%; 
+    color: var(--primary-color); 
+    font-size: 3em; 
+    
+}
+
+article {
+    position: absolute; 
+    background-color: #ffffffcc; 
+    bottom: 20px; 
+    left: 15%; 
+    padding: 10px; 
+}
+
+article img {
+    float: right; 
+    margin-left: 10px; 
+    max-width: 100px; 
+    height: auto; 
+}
+
+section img {
+    max-width: 300px; 
+    height: 200px; 
+}
+
+footer {
+    margin-top: 20px; 
+}
+
+footer a {
+    text-decoration: none; 
+    color: var(--accent-color); 
+}
+
+footer a:hover {
+    color: var(--primary-color); 
+}
+.social-links {
+    display: flex; /* Use flexbox for horizontal layout of social links */
+    gap: 10px; /* Space between the social icons */
+    margin-top: 10px; 
+}
+.social-links img {
+    width: 30px; /* Set a specific width for the social icons */
+    height: auto;
+}
