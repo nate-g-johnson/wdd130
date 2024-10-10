@@ -2,7 +2,7 @@
     --primary-color: #BEDCFE; 
     --secondary-color: #1B7D59; 
     --accent-color: #DBB68F; 
-    --text-color: #333; 
+    --text-color: #fdfdfd; 
     --background-color: #586994; 
     --header-font: 'Afacad Flux', sans-serif; 
     --body-font: 'Roboto', sans-serif;
@@ -16,11 +16,38 @@ body {
     margin: 0 auto; 
     padding: 20px; 
 } 
-header img {
-    width: 200px;
-    height: 200px;
-    
+
+header {
+    max-width: 1000px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr, 2fr;
+    gap: 15px;
 }
+
+header img {
+    width: 100px;
+    height: 100px;
+    padding: 15px;
+    justify-self: center;
+}
+
+nav {
+    display: flex;
+    flex: 1 1 100%;
+    gap: 15px;
+    justify-content: center;
+    grid-column: 2;
+}
+
+a {
+    color: #ffffff;
+}
+
+a:visited {
+    color: #ffffff;
+}
+
 h1, h2 {
     font-family: var(--header-font);
     color: var(--primary-color);
@@ -38,7 +65,7 @@ p {
 .hero-image {
     display: block; 
     width: 100%; 
-    height: auto; 
+    height: 400px; 
 }
 
 h1 {
@@ -52,9 +79,10 @@ h1 {
 
 article {
     position: absolute; 
-    background-color: #ffffffcc; 
-    bottom: 20px; 
-    left: 15%; 
+    background-color: #333333cc;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     padding: 10px; 
 }
 
@@ -65,29 +93,67 @@ article img {
     height: auto; 
 }
 
-section img {
-    max-width: 300px; 
-    height: 200px; 
+.history {
+    text-align: center;
 }
 
-footer {
+.grid-container {
+    display: grid; 
+    grid-template-columns: 2fr 1fr 2fr; 
+    align-items: center; 
+    gap: 20px; 
     margin-top: 20px; 
 }
 
-footer a {
-    text-decoration: none; 
-    color: var(--accent-color); 
+.left, .right {
+    margin: 0; 
 }
 
-footer a:hover {
-    color: var(--primary-color); 
+section {
+    text-align: center;
+    padding: 20px;
 }
-.social-links {
-    display: flex; /* Use flexbox for horizontal layout of social links */
-    gap: 10px; /* Space between the social icons */
+
+.adventure-gallery {
+    display: flex;
+    justify-content: center; 
+    overflow-x: auto;
+    gap: 20px;
+}
+
+figure {
+    margin: 0;
+    text-align: center;
+}
+
+figure img {
+    max-width: 200px;
+    height: 150px;
+}
+
+figcaption {
     margin-top: 10px; 
+    font-weight: bold; 
 }
-.social-links img {
-    width: 30px; /* Set a specific width for the social icons */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a img {
+    width: 24px;
     height: auto;
 }
