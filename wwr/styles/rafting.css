@@ -21,7 +21,7 @@ header {
     max-width: 1000px;
     display: grid;
     align-items: center;
-    grid-template-columns:1fr, 2fr;
+    grid-template-columns:1fr 2fr;
     gap: 15px;
 }
 
