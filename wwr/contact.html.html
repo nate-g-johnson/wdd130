@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Rafting Momentum</title>
+    <meta name="description" content="Leave us your contact info to ask questions about Rafting Momentum and our services.">
+    <meta name="author" content="Nathan Johnson">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@900&family=Roboto:ital,wght@0,100;0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+    <header>
+        <img src="images/rafting-momentum.jpg" alt="Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Contact Us</h1>
+        <section class="company-info">
+            <h2>Company Information</h2>
+            <p><strong>Address:</strong> 123 Adventure Lane, Raftsville, RA 12345</p>
+            <p><strong>Phone:</strong> (123) 456-7890</p>
+            <p><strong>Email:</strong> <a href="mailto:info@raftingmomentum.com">info@raftingmomentum.com</a></p>
+            <div class="map-container">
+                <h2>Our Location</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.047267416211!2d-122.43129708468194!3d37.77492927975982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b15ebc165%3A0x5d7a8aa40a2315d4!2sRafting%20Momentum!5e0!3m2!1sen!2sus!4v1605181783641!5m2!1sen!2sus"
+                    style="border:0;"
+                    allowfullscreen=""
+                    loading="lazy"
+                ></iframe>
+            </div>
+        </section>
+
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="profile">
+                <img src="images/employee1.jpg" alt="Employee 1" class="profile-image">
+                <p>Sarah Maas - Customer Service</p>
+            </div>
+            <div class="profile">
+                <img src="images/employee2.jpg" alt="Employee 2" class="profile-image">
+                <p>Danny Devito - Rafting Guide</p>
+            </div>
+            <div class="profile">
+                <img src="images/employee3.jpg" alt="Employee 3" class="profile-image">
+                <p>Bruce Lee - Adventure Coordinator</p>
+            </div>
+        </section>
+
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="submit_form.php" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="purpose">Purpose of Message:</label>
+                <div class="radio-group">
+                    <label for="general">
+                        General Inquiry
+                        <input type="radio" id="general" name="purpose" value="General Inquiry" required>
+                    </label>
+                    <label for="reservation">
+                        Reservation Question
+                        <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
+                    </label>
+                    <label for="suggestion">
+                        Website Suggestion
+                        <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
+                    </label>
+                </div>                
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <div class="checkbox-group">
+                    <label for="subscribe">
+                        Please subscribe me to the monthly newsletter
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                    </label>
+                </div>       
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>©️2024 🛶 Rafting Momentum 🛶 Nathan Johnson</p>
+        <div class="social-links">
+            <a href="https://facebook.com">
+                <img src="images/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://x.com">
+                <img src="images/x.svg" alt="Twitter">
+            </a>
+            <a href="https://instagram.com">
+                <img src="images/instagram.svg" alt="Instagram">
+            </a>
+        </div>
+        <p>
+            <a href="https://app.moqups.com/AWLEnYxMjmckziN3CtRBtur4kEU0XA5n/view/page/ad12de680" target="_blank">View Contact Us Wireframe</a>
+        </p>
+    </footer>
+</body>
+</html>
