@@ -61,25 +61,36 @@
             <form action="submit_form.php" method="POST">
                 <label for="name">Your Name:</label>
                 <input type="text" id="name" name="name" required>
-
                 <label for="email">Your Email:</label>
                 <input type="email" id="email" name="email" required>
-
-                <label for="purpose">Purpose of Message:</label>
+                <label>Purpose of Message:</label>
                 <div class="radio-group">
-                    <label for="general">
+                    <label>
                         General Inquiry
                         <input type="radio" id="general" name="purpose" value="General Inquiry" required>
                     </label>
-                    <label for="reservation">
+                    <label>
                         Reservation Question
                         <input type="radio" id="reservation" name="purpose" value="Reservation Question" required>
                     </label>
-                    <label for="suggestion">
+                    <label>
                         Website Suggestion
                         <input type="radio" id="suggestion" name="purpose" value="Website Suggestion" required>
                     </label>
-                </div>                
+                </div>
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" required></textarea>
+        
+                <div class="checkbox-group">
+                    <label>
+                        Please subscribe me to the monthly newsletter
+                        <input type="checkbox" id="subscribe" name="subscribe">
+                    </label>
+                </div>
+
+                <button type="submit" class="submit-button">Send Message</button>
+            </form>
+        </section>
 
                 <label for="message">Message:</label>
                 <textarea id="message" name="message" rows="4" required></textarea>
